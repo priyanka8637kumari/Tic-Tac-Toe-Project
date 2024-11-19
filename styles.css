@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global Reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("assets/body-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  height: 100vh;
+}
+
+/* Header Styling */
+header {
+  padding: 30px 0;
+  background-color: rgba(75, 61, 51, 0.907);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Title Styling */
+header h1 {
+  font-size: 4rem;
+}
+
+/* Styling for the Game Result Section (hidden by default) */
+.gameResult {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the Game Board */
+.gameBoardContainer {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Grid layout for the game board (3x3) */
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+}
+
+/* Styling for each game cell */
+.gameCell {
+  height: 120px;
+  width: 120px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  background-color: #fff5e1;
+  font-size: 3rem;
+  font-weight: 800;
+  border: 5px solid #c45b56;
+}
+
+/* Border adjustments for different cells to create a seamless grid */
+.br-0 { border-right: 0; }
+.bl-0 { border-left: 0; }
+.bt-0 { border-top: 0; }
+.bb-0 { border-bottom: 0; }
+
+/* Styling for Reset and New Game buttons */
+.resetGame, #newGame {
+  background-color: #c45b56;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Styling for paragraphs, including player turn and winner message */
+p {
+  background-color: #c45b56;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 320px;
+}
+
+/* Class to hide elements when necessary */
+.hide {
+  display: none;
+}
+
+/* Player turn paragraph styling */
+.playerTurn {
+  margin: 10px auto;
+}

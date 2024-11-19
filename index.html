@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with the title of the game -->
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+
+    <!-- Game result section that shows when a game ends -->
+    <div class="gameResult hide">
+      <p id="winnerMsg">Winner:</p>
+      <img
+        src="assets/excited.gif"
+        alt="winningTeddy"
+        width="200px"
+        height="200px"
+      />
+      <!-- Button to start a new game -->
+      <button id="newGame">New Game</button>
+    </div>
+
+    <main>
+      <!-- Container for the game board -->
+      <div class="gameBoardContainer">
+        <div class="gameBoard">
+          <button class="gameCell bl-0 bt-0"></button>
+          <button class="gameCell bt-0"></button>
+          <button class="gameCell bt-0 br-0"></button>
+          <button class="gameCell bl-0"></button>
+          <button class="gameCell"></button>
+          <button class="gameCell br-0"></button>
+          <button class="gameCell bl-0 bb-0"></button>
+          <button class="gameCell bb-0"></button>
+          <button class="gameCell bb-0 br-0"></button>
+        </div>
+      </div>
+
+      <!-- Button to reset the game -->
+      <button class="resetGame">Reset Game</button>
+
+      <!-- Paragraph displaying which player's turn it currently is -->
+      <p class="playerTurn">Player X turn</p>
+    </main>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
